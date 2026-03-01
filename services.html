@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Holy Joe Coffee | Services & Pricing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Holy Joe Coffee mobile coffee cart services and pricing for the Twin Cities. 2-hour and 3-hour event packages with unlimited espresso drinks.">
+  <link rel="icon" href="assets/logo.gif" type="image/gif">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css">
+  <style>
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-lg);
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .pricing-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+      border: 1px solid var(--border);
+      transition: var(--transition);
+      position: relative;
+    }
+    .pricing-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-hover);
+    }
+    .pricing-card-bar {
+      height: 5px;
+      background: linear-gradient(90deg, var(--accent), var(--highlight));
+    }
+    .pricing-card-body {
+      padding: var(--space-lg);
+    }
+    .pricing-card h3 {
+      font-family: var(--font-display);
+      font-size: var(--text-xl);
+      margin-bottom: 8px;
+    }
+    .pricing-card .price {
+      font-size: var(--text-2xl);
+      font-weight: 700;
+      color: var(--highlight);
+      margin-bottom: var(--space-md);
+    }
+    .pricing-card ul {
+      text-align: left;
+      margin-bottom: var(--space-md);
+    }
+    .pricing-card li {
+      padding: 8px 0;
+      font-size: var(--text-base);
+      color: var(--muted);
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+    }
+    .pricing-card li::before {
+      content: '\2713';
+      color: var(--accent);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .pricing-card .note {
+      font-style: italic;
+      font-size: var(--text-sm);
+      color: var(--muted);
+      margin-top: var(--space-sm);
+    }
+    /* Popular ribbon */
+    .ribbon {
+      position: absolute;
+      top: 20px;
+      right: -35px;
+      background: var(--highlight);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 6px 40px;
+      transform: rotate(45deg);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .included-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-md);
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+    .included-item {
+      text-align: center;
+      padding: var(--space-md);
+    }
+    .included-item span {
+      display: block;
+      font-size: 2.2rem;
+      margin-bottom: 12px;
+    }
+    .included-item h4 {
+      font-size: 1rem;
+      margin-bottom: 4px;
+    }
+    .included-item p {
+      font-size: var(--text-sm);
+      color: var(--muted);
+    }
+    @media (max-width: 840px) {
+      .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+      }
+      .included-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.gif" alt="Holy Joe Logo" class="brand-logo">
+        <div class="brand-title">Holy Joe Coffee</div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span></button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">Our Story</a>
+        <a href="services.html">Services</a>
+        <a href="menu.html">Menu</a>
+        <a href="book.html" class="nav-cta btn-nav">Book Online</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero" style="background-image:url('assets/banner.jpg');">
+      <div>
+        <h1 class="section-title" style="color:#fff;">Services &amp; Pricing</h1>
+      </div>
+    </section>
+
+    <!-- Pricing Cards -->
+    <section class="section text-center">
+      <div class="container">
+        <span class="label reveal">Our Packages</span>
+        <h2 class="section-title reveal">Mobile Coffee Cart for Your Event</h2>
+        <p class="section-subtitle reveal">Professional espresso service for any occasion — weddings, parishes, schools, corporate events, and more.</p>
+        <div class="pricing-grid reveal-stagger">
+          <div class="pricing-card reveal">
+            <div class="pricing-card-bar"></div>
+            <div class="pricing-card-body">
+              <h3>2-Hour Service</h3>
+              <div class="price">From $350</div>
+              <ul>
+                <li>Unlimited hot &amp; iced espresso drinks</li>
+                <li>One professional barista</li>
+                <li>Full setup &amp; breakdown</li>
+                <li>Travel within 30 min of Twin Cities</li>
+                <li>All taxes included</li>
+              </ul>
+              <p class="note">Ideal for shorter events or smaller groups.</p>
+              <a href="book.html" class="btn-primary" style="margin-top:24px; width:100%;">Book This Package</a>
+            </div>
+          </div>
+          <div class="pricing-card reveal">
+            <div class="ribbon">Most Popular</div>
+            <div class="pricing-card-bar"></div>
+            <div class="pricing-card-body">
+              <h3>3-Hour Service</h3>
+              <div class="price">From $450</div>
+              <ul>
+                <li>Unlimited hot &amp; iced espresso drinks</li>
+                <li>Barista(s) matched to event size</li>
+                <li>Full setup &amp; breakdown</li>
+                <li>Travel within 30 min of Twin Cities</li>
+                <li>All taxes included</li>
+              </ul>
+              <p class="note">Great for festivals, receptions, or larger gatherings.</p>
+              <a href="book.html" class="btn-primary" style="margin-top:24px; width:100%;">Book This Package</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What's Included -->
+    <section class="section section-alt text-center">
+      <div class="container">
+        <span class="label reveal">Every Package Includes</span>
+        <h2 class="section-title reveal">What&rsquo;s Included</h2>
+        <div class="included-grid reveal-stagger">
+          <div class="included-item reveal">
+            <span aria-hidden="true">&#9749;</span>
+            <h4>Unlimited Drinks</h4>
+            <p>Hot and iced espresso, drip coffee, and hot chocolate</p>
+          </div>
+          <div class="included-item reveal">
+            <span aria-hidden="true">&#9733;</span>
+            <h4>Professional Barista</h4>
+            <p>Trained and friendly, matched to your event size</p>
+          </div>
+          <div class="included-item reveal">
+            <span aria-hidden="true">&#9881;</span>
+            <h4>Setup &amp; Breakdown</h4>
+            <p>We arrive early and leave your space clean</p>
+          </div>
+          <div class="included-item reveal">
+            <span aria-hidden="true">&#128663;</span>
+            <h4>Travel Included</h4>
+            <p>Within 30 minutes of the Twin Cities metro</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+      <div class="container reveal">
+        <h2>Ready to bring joyful coffee to your event?</h2>
+        <p>Let us serve your next parish festival, wedding, school event, or celebration.</p>
+        <a href="book.html" class="btn-light">Book Your Event</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="brand-title">Holy Joe Coffee</div>
+        <p>Joyful coffee, grounded in faith. Serving the Twin Cities with quality espresso and warm hospitality.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">Our Story</a>
+          <a href="services.html">Services & Pricing</a>
+          <a href="menu.html">Menu</a>
+          <a href="book.html">Book Online</a>
+        </div>
+      </div>
+      <div class="footer-contact">
+        <h4>Get in Touch</h4>
+        <p><a href="tel:6513079933">651-307-9933</a></p>
+        <p><a href="mailto:holyjoe.coffee@gmail.com">holyjoe.coffee@gmail.com</a></p>
+        <p style="margin-top:12px;"><a href="https://www.instagram.com/holyjoe.coffee" target="_blank" rel="noopener">@holyjoe.coffee</a></p>
+      </div>
+    </div>
+    <div class="footer-bar">
+      &copy; 2026 Holy Joe Coffee. All rights reserved. &nbsp;|&nbsp; <a href="privacy-terms.html">Privacy & Terms</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

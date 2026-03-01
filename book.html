@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Holy Joe Coffee | Book Online</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Book Holy Joe Coffee's mobile coffee cart for your Twin Cities event. Submit a request and we'll respond within 1-2 business days.">
+  <link rel="icon" href="assets/logo.gif" type="image/gif">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/page-book.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.gif" alt="Holy Joe Logo" class="brand-logo">
+        <div class="brand-title">Holy Joe Coffee</div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span></button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">Our Story</a>
+        <a href="services.html">Services</a>
+        <a href="menu.html">Menu</a>
+        <a href="book.html" class="nav-cta btn-nav">Book Online</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero" style="background-image:url('assets/banner.jpg');">
+      <div>
+        <h1 class="section-title" style="color:#fff;">Book Online</h1>
+      </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="section">
+      <div class="container text-center">
+        <span class="label reveal">Get Started</span>
+        <h2 class="section-title reveal">Request Coffee Cart Service</h2>
+        <p class="section-subtitle reveal">Share your event details below and we'll follow up with availability, a quote, and confirmation.</p>
+
+        <div class="book-form-wrapper reveal">
+          <form id="booking-form" class="book-form" action="https://formsubmit.co/holyjoe.coffee@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New Coffee Cart Booking Request">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" style="display:none">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name">Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+              </div>
+              <div class="form-group">
+                <label for="organization">Parish / School / Organization</label>
+                <input type="text" id="organization" name="organization">
+              </div>
+              <div class="form-group">
+                <label for="event-date">Event Date</label>
+                <input type="date" id="event-date" name="event_date">
+              </div>
+              <div class="form-group">
+                <label for="start-time">Start Time</label>
+                <input type="time" id="start-time" name="start_time">
+              </div>
+              <div class="form-group">
+                <label for="location">Event Location</label>
+                <input type="text" id="location" name="location">
+              </div>
+              <div class="form-group">
+                <label for="guests">Estimated Guest Count</label>
+                <input type="number" id="guests" name="guest_count" min="1">
+              </div>
+              <div class="form-group full-width">
+                <label for="package">Preferred Package</label>
+                <select id="package" name="package">
+                  <option value="">Select a package...</option>
+                  <option value="2-hour">2-Hour Coffee Cart Service (from $350)</option>
+                  <option value="3-hour">3-Hour Coffee Cart Service (from $450)</option>
+                  <option value="not-sure">Not sure yet</option>
+                </select>
+              </div>
+              <div class="form-group full-width">
+                <label for="event-type">Event Type</label>
+                <input type="text" id="event-type" name="event_type" placeholder="Parish festival, school event, wedding, corporate, etc.">
+              </div>
+              <div class="form-group full-width">
+                <label for="details">Additional Details</label>
+                <textarea id="details" name="details" placeholder="Anything else we should know? (schedule, special requests, etc.)"></textarea>
+              </div>
+              <div class="form-submit">
+                <button type="submit" class="btn-primary">Submit Request</button>
+              </div>
+            </div>
+          </form>
+
+          <div id="form-status" class="form-status"></div>
+
+          <p class="form-reassurance">This is a request, not a commitment. We'll respond within 1&ndash;2 business days.</p>
+
+          <p style="margin-top:var(--space-md); color:var(--muted); font-size:var(--text-sm); text-align:center;">
+            Or contact us directly: <a href="mailto:holyjoe.coffee@gmail.com" style="color:var(--accent);">holyjoe.coffee@gmail.com</a> &nbsp;|&nbsp; <a href="tel:6513079933" style="color:var(--accent);">651-307-9933</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="brand-title">Holy Joe Coffee</div>
+        <p>Joyful coffee, grounded in faith. Serving the Twin Cities with quality espresso and warm hospitality.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">Our Story</a>
+          <a href="services.html">Services & Pricing</a>
+          <a href="menu.html">Menu</a>
+          <a href="book.html">Book Online</a>
+        </div>
+      </div>
+      <div class="footer-contact">
+        <h4>Get in Touch</h4>
+        <p><a href="tel:6513079933">651-307-9933</a></p>
+        <p><a href="mailto:holyjoe.coffee@gmail.com">holyjoe.coffee@gmail.com</a></p>
+        <p style="margin-top:12px;"><a href="https://www.instagram.com/holyjoe.coffee" target="_blank" rel="noopener">@holyjoe.coffee</a></p>
+      </div>
+    </div>
+    <div class="footer-bar">
+      &copy; 2026 Holy Joe Coffee. All rights reserved. &nbsp;|&nbsp; <a href="privacy-terms.html">Privacy & Terms</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

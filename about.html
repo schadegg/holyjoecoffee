@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Holy Joe Coffee | Our Story</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn the story behind Holy Joe Coffee — born from a desire to serve with humility, joy, and the quiet strength of St. Joseph.">
+  <link rel="icon" href="assets/logo.gif" type="image/gif">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css">
+  <style>
+    .zigzag {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-lg);
+      align-items: center;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+    .zigzag.reverse .zigzag-image { order: 2; }
+    .zigzag.reverse .zigzag-text { order: 1; }
+    .zigzag-text h2 {
+      font-family: var(--font-display);
+      font-size: var(--text-2xl);
+      margin-bottom: var(--space-sm);
+    }
+    .zigzag-text p {
+      color: var(--muted);
+      font-size: var(--text-base);
+      line-height: 1.85;
+    }
+    .quote-block {
+      background: var(--bg-alt);
+      padding: var(--space-xl) var(--space-md);
+      text-align: center;
+      position: relative;
+    }
+    .quote-block blockquote {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: var(--text-2xl);
+      max-width: 800px;
+      margin: 0 auto;
+      color: var(--text);
+      line-height: 1.6;
+      position: relative;
+    }
+    .quote-block blockquote::before {
+      content: '\201C';
+      font-size: 5rem;
+      color: var(--highlight);
+      opacity: 0.4;
+      position: absolute;
+      top: -40px;
+      left: -20px;
+      font-family: var(--font-display);
+      line-height: 1;
+    }
+    @media (max-width: 840px) {
+      .zigzag {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .zigzag.reverse .zigzag-image { order: 0; }
+      .zigzag.reverse .zigzag-text { order: 0; }
+      .zigzag .image-frame {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.gif" alt="Holy Joe Logo" class="brand-logo">
+        <div class="brand-title">Holy Joe Coffee</div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span></button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">Our Story</a>
+        <a href="services.html">Services</a>
+        <a href="menu.html">Menu</a>
+        <a href="book.html" class="nav-cta btn-nav">Book Online</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero" style="background-image:url('assets/coffee2.jpg');">
+      <div>
+        <h1 class="section-title" style="color:#fff;">Our Story</h1>
+      </div>
+    </section>
+
+    <!-- Zigzag Content Blocks -->
+    <section class="section">
+      <div class="zigzag reveal">
+        <div class="image-frame zigzag-image">
+          <img src="assets/coffee2.jpg" alt="Catholic Coffee Roasts">
+        </div>
+        <div class="zigzag-text">
+          <span class="label">How It Started</span>
+          <h2>Born from a Desire to Serve</h2>
+          <p>Holy Joe Coffee was born from a desire to create a warm, welcoming space wherever people gather — from parish festivals and school events to weddings and workplace celebrations.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="zigzag reverse reveal">
+        <div class="image-frame zigzag-image">
+          <img src="assets/aboutus.jpg" alt="The Holy Joe Team">
+        </div>
+        <div class="zigzag-text">
+          <span class="label">Our Patron</span>
+          <h2>Inspired by St. Joseph</h2>
+          <p>Inspired by the quiet strength and faithful care of St. Joseph, we see each event as an opportunity to serve with humility, attentiveness, and joy. Every drink is prepared with care, but our deeper hope is that people feel seen, welcomed, and at home.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="zigzag reveal">
+        <div class="image-frame zigzag-image">
+          <img src="assets/coffee.jpg" alt="Coffee products">
+        </div>
+        <div class="zigzag-text">
+          <span class="label">What We Serve</span>
+          <h2>Proudly Serving Catholic Coffee</h2>
+          <p>We proudly serve Catholic Coffee, with roasts named after beloved saints and devotions. It's a simple way to weave prayerful intention into the rhythm of daily life.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission Quote -->
+    <section class="quote-block">
+      <div class="container reveal">
+        <blockquote>Our mission is to fuel both body and spirit — bringing people together, fostering meaningful connection, and honoring the dignity of daily work through the simple gift of coffee.</blockquote>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+      <div class="container reveal">
+        <h2>Ready to bring joyful coffee to your event?</h2>
+        <p>Let us serve your next parish festival, wedding, school event, or celebration.</p>
+        <a href="book.html" class="btn-light">Book Your Event</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="brand-title">Holy Joe Coffee</div>
+        <p>Joyful coffee, grounded in faith. Serving the Twin Cities with quality espresso and warm hospitality.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">Our Story</a>
+          <a href="services.html">Services & Pricing</a>
+          <a href="menu.html">Menu</a>
+          <a href="book.html">Book Online</a>
+        </div>
+      </div>
+      <div class="footer-contact">
+        <h4>Get in Touch</h4>
+        <p><a href="tel:6513079933">651-307-9933</a></p>
+        <p><a href="mailto:holyjoe.coffee@gmail.com">holyjoe.coffee@gmail.com</a></p>
+        <p style="margin-top:12px;"><a href="https://www.instagram.com/holyjoe.coffee" target="_blank" rel="noopener">@holyjoe.coffee</a></p>
+      </div>
+    </div>
+    <div class="footer-bar">
+      &copy; 2026 Holy Joe Coffee. All rights reserved. &nbsp;|&nbsp; <a href="privacy-terms.html">Privacy & Terms</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
