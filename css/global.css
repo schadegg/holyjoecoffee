@@ -8,18 +8,18 @@
   --bg: #fbf8f2;
   --bg-alt: #f5efe5;
   --bg-dark: #2e2720;
-  --bg-green: #2d6a4f;
-  --bg-green-light: #e8f2ec;
+  --bg-green: #403F2B;
+  --bg-green-light: #edecd6;
   --overlay-dark: rgba(46, 39, 32, 0.65);
-  --overlay-green: rgba(45, 106, 79, 0.85);
+  --overlay-green: rgba(64, 63, 43, 0.85);
   --overlay-warm: rgba(166, 124, 82, 0.12);
   --text: #2e2720;
   --text-light: #f5efe5;
   --muted: #7a6f66;
   --accent: #a67c52;
   --highlight: #c9a86a;
-  --green: #2d6a4f;
-  --green-light: #3a8a63;
+  --green: #403F2B;
+  --green-light: #5a5938;
   --card-bg: #ffffff;
   --border: #e0d3c2;
 
@@ -261,9 +261,9 @@ h1, h2, h3, h4 {
 .btn-nav {
   background: linear-gradient(135deg, var(--accent), var(--highlight));
   color: #fff;
-  padding: 8px 20px;
+  padding: 12px 28px;
   border-radius: var(--radius-pill);
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -484,7 +484,7 @@ h1, h2, h3, h4 {
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(45, 106, 79, 0.7) 0%,
+    rgba(64, 63, 43, 0.7) 0%,
     rgba(46, 39, 32, 0.6) 100%
   );
 }
