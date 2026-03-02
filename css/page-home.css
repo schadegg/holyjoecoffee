@@ -11,7 +11,6 @@
   justify-content: center;
   text-align: center;
   background: url('../assets/banner.jpg') center/cover no-repeat;
-  background-attachment: fixed;
   color: #fff;
   overflow: hidden;
 }
@@ -23,7 +22,7 @@
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(59, 84, 56, 0.6) 0%,
+    rgba(45, 106, 79, 0.6) 0%,
     rgba(46, 39, 32, 0.7) 100%
   );
   z-index: 1;
@@ -179,7 +178,6 @@
 @media (max-width: 840px) {
   .hero {
     min-height: 70vh;
-    background-attachment: scroll;
   }
 
   .why-grid {
