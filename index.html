@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/page-home.css">
+  <link rel="stylesheet" href="https://cdn.curator.io/6.0/curator.embed.css">
 </head>
 <body>
   <header class="nav">
@@ -42,7 +43,7 @@
     </section>
 
     <!-- Why Holy Joe -->
-    <section class="section text-center">
+    <section class="section section-green-light text-center">
       <div class="container">
         <span class="label reveal">Why Choose Us</span>
         <h2 class="section-title reveal">More Than Just Coffee</h2>
@@ -98,13 +99,35 @@
       </div>
     </section>
 
-    <!-- Instagram CTA -->
-    <section class="section section-alt text-center">
+    <!-- Instagram Feed -->
+    <section class="instagram-section">
       <div class="container reveal">
         <span class="label">Follow Along</span>
         <h2 class="section-title">See Us in Action</h2>
         <p class="section-subtitle">Check out our latest events, behind-the-scenes moments, and more on Instagram.</p>
-        <a href="https://www.instagram.com/holyjoe.coffee" target="_blank" rel="noopener" class="instagram-link">@holyjoe.coffee &rarr;</a>
+        <div class="instagram-feed">
+          <!--
+            Instagram Feed via Curator.io (free plan — 3 sources, updates every 24h)
+            Setup: 1) Create free account at curator.io
+                   2) Add Instagram source for @holyjoe.coffee
+                   3) Choose Grid layout, click Publish → Get Code
+                   4) Replace YOUR_FEED_ID below with your feed ID
+          -->
+          <div id="curator-feed">
+            <a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a>
+          </div>
+          <script type="text/javascript">
+            (function(){
+              var i, e, d = document, s = "script";
+              i = d.createElement("script");
+              i.async = 1;
+              i.src = "https://cdn.curator.io/published/YOUR_FEED_ID.js";
+              e = d.getElementsByTagName(s)[0];
+              e.parentNode.insertBefore(i, e);
+            })();
+          </script>
+        </div>
+        <a href="https://www.instagram.com/holyjoe.coffee" target="_blank" rel="noopener" class="instagram-follow">@holyjoe.coffee &rarr;</a>
       </div>
     </section>
 

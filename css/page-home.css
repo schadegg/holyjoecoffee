@@ -16,14 +16,14 @@
   overflow: hidden;
 }
 
-/* Dark gradient overlay for readability */
+/* Dark gradient overlay with green tint for readability */
 .hero::before {
   content: '';
   position: absolute;
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(46, 39, 32, 0.55) 0%,
+    rgba(59, 84, 56, 0.6) 0%,
     rgba(46, 39, 32, 0.7) 100%
   );
   z-index: 1;
@@ -34,7 +34,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(166, 124, 82, 0.1);
+  background: rgba(166, 124, 82, 0.08);
   z-index: 2;
 }
 
@@ -101,12 +101,29 @@
 .why-card {
   text-align: center;
   padding: var(--space-lg) var(--space-md);
+  background: var(--card-bg);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  transition: var(--transition);
+}
+
+.why-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
 }
 
 .why-icon {
   font-size: 2.5rem;
   margin-bottom: var(--space-sm);
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  background: var(--bg-green-light);
+  color: var(--green);
+  border-radius: 50%;
+  margin: 0 auto var(--space-sm);
 }
 
 .why-card h3 {
