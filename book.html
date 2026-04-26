@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <base href="https://schadegg.github.io/holyjoecoffee/">
   <title>Holy Joe Coffee | Book Online</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Book Holy Joe Coffee's mobile coffee cart for your Twin Cities event. Submit a request and we'll respond within 1-2 business days.">
@@ -50,6 +49,9 @@
           <form id="booking-form" class="book-form" action="https://formsubmit.co/holyjoe.coffee@gmail.com" method="POST">
             <input type="hidden" name="_subject" value="New Coffee Cart Booking Request">
             <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_autoresponse" value="Hi! Thanks so much for reaching out to Holy Joe Coffee. We've received your booking request and one of our team members will follow up within 1-2 business days with availability and a quote. If your event is coming up soon, feel free to call or text us at 651-307-9933. Joyful coffee, grounded in faith — Holy Joe Coffee">
+            <input type="hidden" name="_next" value="https://schadegg.github.io/holyjoecoffee/book.html?submitted=true">
             <input type="text" name="_honey" style="display:none">
             <div class="form-grid">
               <div class="form-group">
@@ -117,6 +119,36 @@
         </div>
       </div>
     </section>
+
+    <!-- Payment Section -->
+    <section class="section section-green-light">
+      <div class="container text-center">
+        <span class="label reveal">Already Booked?</span>
+        <h2 class="section-title reveal">Pay for Your Service</h2>
+        <p class="section-subtitle reveal">Once your booking is confirmed, pay securely below. You'll receive an email receipt instantly.</p>
+
+        <div class="pay-grid reveal" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:var(--space-md); max-width:760px; margin:var(--space-lg) auto 0; text-align:left;">
+
+          <div style="background:#fff; border-radius:14px; padding:var(--space-lg); box-shadow:0 4px 18px rgba(0,0,0,0.06); display:flex; flex-direction:column;">
+            <h3 style="font-family:var(--font-display); font-size:var(--text-xl); margin-bottom:8px;">2-Hour Service</h3>
+            <div style="font-size:var(--text-2xl); font-weight:700; color:var(--highlight); margin-bottom:var(--space-md);">$350</div>
+            <p style="color:var(--muted); font-size:var(--text-sm); margin-bottom:var(--space-md); flex-grow:1;">Full service for events up to 2 hours. Includes setup, baristas, and full menu.</p>
+            <a href="https://square.link/u/XQ5O0TiE" class="btn-primary" style="width:100%; text-align:center;">Pay $350</a>
+          </div>
+
+          <div style="background:#fff; border-radius:14px; padding:var(--space-lg); box-shadow:0 4px 18px rgba(0,0,0,0.06); display:flex; flex-direction:column;">
+            <h3 style="font-family:var(--font-display); font-size:var(--text-xl); margin-bottom:8px;">3-Hour Service</h3>
+            <div style="font-size:var(--text-2xl); font-weight:700; color:var(--highlight); margin-bottom:var(--space-md);">$450</div>
+            <p style="color:var(--muted); font-size:var(--text-sm); margin-bottom:var(--space-md); flex-grow:1;">Full service for events up to 3 hours. Most popular for weddings and parish festivals.</p>
+            <a href="https://square.link/u/08fjX97K" class="btn-primary" style="width:100%; text-align:center;">Pay $450</a>
+          </div>
+
+        </div>
+
+        <p style="margin-top:var(--space-lg); color:var(--muted); font-size:var(--text-sm);">Secure payment powered by Square. We accept all major credit and debit cards.</p>
+        <p style="margin-top:var(--space-xs); color:var(--muted); font-size:var(--text-sm);">Custom package or different amount? <a href="mailto:holyjoe.coffee@gmail.com" style="color:var(--accent);">Email us</a> for an invoice.</p>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
@@ -148,5 +180,7 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <!-- Cloudflare Web Analytics: replace YOUR_TOKEN_HERE with the token from dash.cloudflare.com -> Web Analytics -->
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "YOUR_TOKEN_HERE"}'></script>
 </body>
 </html>

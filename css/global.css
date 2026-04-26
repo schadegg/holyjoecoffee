@@ -706,13 +706,12 @@ h1, h2, h3, h4 {
     justify-content: center;
     align-items: center;
     gap: 32px;
-    background: rgba(251, 248, 242, 0.98);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    background: #fbf8f2;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.35s ease;
     font-size: 1.2rem;
+    z-index: 100;
   }
 
   .nav-links.open {
@@ -720,8 +719,10 @@ h1, h2, h3, h4 {
     pointer-events: auto;
   }
 
+  /* Keep hamburger above the menu so users can close it */
   .nav-toggle {
     display: flex;
+    z-index: 101;
   }
 
   .footer-inner {
